@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Евгений Гладких — Backend-разработчик: Python, PHP, MySQL. Москва.">
+  <meta property="og:title" content="Евгений Гладких | Backend Developer">
+  <meta property="og:description" content="Ведущий разработчик • Москва • Создаю надёжные решения для сложных задач">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeka0693.github.io">
+  <title>Евгений Гладких | Backend Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%232563eb%22>👨‍💻</text></svg>">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="floating-dots">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+    <span class="toggle-icon">🌙</span>
+  </button>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="photo.jpg" alt="Евгений Гладких" class="photo" 
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%232563eb%22/%3E%3Ctext x=%22100%22 y=%22120%22 font-size=%2280%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>👨‍💻%3C/text%3E%3C/svg%3E'">
+            <div class="photo-ring"></div>
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Открыт к предложениям
+          </div>
+        </div>
+        
+        <div class="hero-text">
+          <p class="greeting">Привет! Я <span class="wave">👋</span></p>
+          <h1>Евгений <span class="highlight">Гладких</span></h1>
+          <p class="subtitle">Ведущий backend-разработчик • Москва • Создаю надёжные решения для сложных задач</p>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">лет в разработке</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">основных проекта</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">решённых задач</span>
+            </div>
+          </div>
+
+          <div class="hero-links">
+            <a href="#about" class="btn btn-primary">Обо мне</a>
+            <a href="#projects" class="btn btn-secondary">Проекты</a>
+            <a href="#contact" class="btn btn-ghost">Связаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">
+            Ответственный, трудолюбивый, интересный — так я бы описал себя тремя словами. 
+            Люблю находить элегантные решения для сложных технических задач.
+          </p>
+          
+          <div class="about-content">
+            <p>
+              Выпускник ASEM по специальности «Кибернетика» (2010). За годы работы прошёл путь 
+              от написания простых скриптов до архитектуры сложных систем. Специализируюсь на 
+              <strong>Python</strong> и <strong>PHP</strong>, но главный инструмент — умение 
+              думать на шаг вперёд.
+            </p>
+            <p>
+              Меня вдохновляет процесс: взять неочевидную задачу, разложить её на части и 
+              создать решение, которое будет работать надёжно и масштабируемо. Не люблю 
+              «костыли» — предпочитаю продуманную архитектуру с запасом на будущее.
+            </p>
+          </div>
+
+          <div class="interests">
+            <h3>Что меня вдохновляет</h3>
+            <ul class="interests-list">
+              <li><span class="icon">🎯</span> Решение сложных архитектурных задач</li>
+              <li><span class="icon">⚡</span> Оптимизация кода и баз данных</li>
+              <li><span class="icon">🧩</span> Поиск неочевидных технических решений</li>
+              <li><span class="icon">📚</span> Изучение новых подходов (в т.ч. Prompt Engineering)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="card-icon">📍</div>
+            <h4>Локация</h4>
+            <p>Москва, Россия</p>
+            <span class="card-detail">Удалённая работа / Офис</span>
+          </div>
+          
+          <div class="info-card">
+            <div class="card-icon">🎓</div>
+            <h4>Образование</h4>
+            <p>ASEM, Кибернетика</p>
+            <span class="card-detail">2010</span>
+          </div>
+          
+          <div class="info-card">
+            <div class="card-icon">🌍</div>
+            <h4>Английский</h4>
+            <p>Чтение технической документации</p>
+            <span class="card-detail">Technical Reading</span>
+          </div>
+          
+          <div class="info-card">
+            <div class="card-icon">🎲</div>
+            <h4>Хобби</h4>
+            <p>Настольные игры, музыка</p>
+            <span class="card-detail">Семья и отдых</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Технический стек</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">💻</span>
+            Языки программирования
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">PHP</span>
+            <span class="skill-tag level-expert">Python</span>
+            <span class="skill-tag level-advanced">JavaScript</span>
+            <span class="skill-tag level-advanced">SQL</span>
+            <span class="skill-tag level-intermediate">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">🗄️</span>
+            Базы данных
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">MySQL ⭐</span>
+            <span class="skill-tag level-expert">SQLite ⭐</span>
+            <span class="skill-tag level-junior">PostgreSQL</span>
+            <span class="skill-tag level-advanced">SQLAlchemy</span>
+            <span class="skill-tag level-advanced">Query Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">⚙️</span>
+            Инструменты и инфраструктура
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-expert">Git</span>
+            <span class="skill-tag level-advanced">Docker</span>
+            <span class="skill-tag level-advanced">Apache Kafka</span>
+            <span class="skill-tag level-advanced">Jenkins</span>
+            <span class="skill-tag level-intermediate">REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">🏗️</span>
+            Архитектура и методологии
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-advanced">Design Patterns</span>
+            <span class="skill-tag level-advanced">Async Programming</span>
+            <span class="skill-tag level-intermediate">Microservices</span>
+            <span class="skill-tag level-intermediate">CI/CD</span>
+            <span class="skill-tag level-intermediate">Prompt Engineering 🎯</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Опыт работы</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Ведущий разработчик</h3>
+              <span class="timeline-period">Настоящее время</span>
+            </div>
+            <div class="timeline-company">Backend-разработка / Fullstack</div>
+            <ul class="timeline-list">
+              <li>Разработка и поддержка backend-решений на Python и PHP</li>
+              <li>Проектирование архитектуры баз данных и оптимизация запросов</li>
+              <li><strong>Ключевое достижение:</strong> внедрил систему автоматического создания 
+                  оптимизированных таблиц при получении неизвестных данных из API — 
+                  обеспечена целостность данных и масштабируемость</li>
+              <li>Интеграция внешних сервисов, работа с асинхронными задачами</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Ментор / Консультант</h3>
+              <span class="timeline-period">Периодически</span>
+            </div>
+            <div class="timeline-company">PHP-разработка</div>
+            <ul class="timeline-list">
+              <li>Обучение начинающих разработчиков основам PHP и лучшим практикам</li>
+              <li>Code review, помощь в решении архитектурных вопросов</li>
+              <li>Передача опыта работы с фреймворками и базами данных</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Избранные проекты</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-badge">🔥 Fullstack</div>
+          <div class="project-header">
+            <h3>📻 Радио-сканер</h3>
+            <div class="project-links">
+              <a href="#" class="project-link-icon" title="GitHub">🐙</a>
+              <a href="#" class="project-link-icon" title="Demo">🔗</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Система мониторинга радиоэфира: парсинг топ-20 радиостанций, распознавание 
+            треков в реальном времени, сохранение в БД. Фронтенд отображает случайную 
+            подборку треков с ссылками на соцсети для оценки и прослушивания.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Yii2</span>
+            <span class="tech-badge">Parsing</span>
+          </div>
+          <div class="project-role">
+            <strong>Роль:</strong> Fullstack-разработчик
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>📈 Инвестиционный анализатор</h3>
+            <div class="project-links">
+              <a href="#" class="project-link-icon" title="GitHub">🐙</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Python-приложение для анализа биржевых данных: выбор лучших облигаций, 
+            оценка эмитентов по финансовым показателям, интеграция с биржевым API. 
+            Уведомления через Telegram-бота.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Async</span>
+            <span class="tech-badge">Telegram Bot</span>
+          </div>
+          <div class="project-role">
+            <strong>Роль:</strong> Fullstack-разработчик
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>🔍 Мониторинг цен</h3>
+            <div class="project-links">
+              <a href="#" class="project-link-icon" title="GitHub">🐙</a>
+            </div>
+          </div>
+          <p class="project-description">
+            Скрипт для поиска лучших предложений: туры по всем базам турагентств, 
+            товары по прямым ссылкам. Отслеживание изменений цен и мгновенные 
+            уведомления о выгодных предложениях.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Python/PHP</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Schedulers</span>
+            <span class="tech-badge">Notifications</span>
+          </div>
+          <div class="project-role">
+            <strong>Роль:</strong> Backend-разработчик
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center">
+        <p class="projects-note">
+          💡 Проекты находятся в процессе рефакторинга и подготовки к публикации на GitHub. 
+          Скоро появятся ссылки на репозитории!
+        </p>
+        <a href="https://github.com/jeka0693" target="_blank" class="btn btn-secondary">
+          Следить за обновлениями на GitHub →
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Связаться со мной</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-text">
+          <p class="contact-intro">
+            Ищу позицию <strong>Full-time Backend Developer</strong>. 
+            Открыт к интересным задачам в стартапах, enterprise-проектах и open-source.
+          </p>
+          
+          <div class="contact-methods">
+            <a href="mailto:developer.evgen@mail.ru" class="contact-method">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">developer.evgen@mail.ru</span>
+              </div>
+            </a>
+            
+            <a href="https://t.me/jeka069" target="_blank" class="contact-method">
+              <span class="contact-icon">✈️</span>
+              <div>
+                <span class="contact-label">Telegram</span>
+                <span class="contact-value">@jeka069</span>
+              </div>
+            </a>
+            
+            <a href="https://github.com/jeka0693" target="_blank" class="contact-method">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@jeka0693</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <div class="cta-card">
+            <h3>Готов к новым вызовам</h3>
+            <p>Если у вас есть проект, где нужен надёжный бэкенд, чистая архитектура 
+               и ответственный подход — давайте обсудим сотрудничество.</p>
+            <a href="mailto:developer.evgen@mail.ru" class="btn btn-primary btn-large">
+              Написать письмо →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Евгений Гладких. Создано с <span class="heart">❤️</span> и чистым кодом.</p>
+      <p class="footer-note">Backend Developer • Москва • Открыт к предложениям</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
