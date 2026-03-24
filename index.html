@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой сайт</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Портфолио разработчика — бэкенд, базы данных, автоматизация">
+  <title>Евгений | Разработчик</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
 <body>
-  <h1>Привет! 👋</h1>
-  <p>Это мой первый сайт на GitHub Pages.</p>
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Привет, я <span class="highlight">Евгений</span></h1>
+      <p class="subtitle">Backend-разработчик • Python • PHP • Базы данных</p>
+      <div class="hero-links">
+        <a href="#about" class="btn">Обо мне</a>
+        <a href="#projects" class="btn btn-outline">Проекты</a>
+        <a href="#contact" class="btn btn-ghost">Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>👨‍💻 Обо мне</h2>
+      <p>
+        Разрабатываю надёжные бэкенд-решения уже 7+ лет. Специализируюсь на 
+        автоматизации, работе с базами данных и интеграциях. Люблю чистый код, 
+        продуманную архитектуру и задачи, где важно качество, а не только скорость.
+      </p>
+      <ul class="highlights">
+        <li>🐍 Python (SQLAlchemy, asyncio, FastAPI)</li>
+        <li>🐘 PHP (OpenCart, Laravel, кастомные решения)</li>
+        <li>🗄️ MySQL, PostgreSQL, оптимизация запросов</li>
+        <li>🔧 Docker, Git, CI/CD, Linux</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>🛠️ Навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">🐍</span>Python</div>
+        <div class="skill-card"><span class="skill-icon">🐘</span>PHP</div>
+        <div class="skill-card"><span class="skill-icon">🗄️</span>SQL / ORM</div>
+        <div class="skill-card"><span class="skill-icon">🔄</span>Async / asyncio</div>
+        <div class="skill-card"><span class="skill-icon">🐳</span>Docker</div>
+        <div class="skill-card"><span class="skill-icon">🔗</span>REST / API</div>
+        <div class="skill-card"><span class="skill-icon">📦</span>Git / GitHub</div>
+        <div class="skill-card"><span class="skill-icon">⚙️</span>Linux / Bash</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>🚀 Проекты</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>📊 Парсер финансовых данных</h3>
+          <p>Асинхронный сбор и обработка данных о ценных бумагах из XML-фидов с сохранением в MySQL.</p>
+          <div class="tags">
+            <span>Python</span><span>asyncio</span><span>SQLAlchemy</span><span>MySQL</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+        <article class="project-card">
+          <h3>🛒 Модуль для OpenCart</h3>
+          <p>Кастомная интеграция платёжной системы с расширенной логикой обработки заказов.</p>
+          <div class="tags">
+            <span>PHP</span><span>OpenCart</span><span>MySQL</span><span>REST API</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+        <article class="project-card">
+          <h3>🔁 Универсальный DB-слой</h3>
+          <p>Переиспользуемый асинхронный слой для работы с разными типами сущностей в БД.</p>
+          <div class="tags">
+            <span>Python</span><span>Design Patterns</span><span>Architecture</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>📬 Связаться со мной</h2>
+      <p>Открыт к интересным предложениям и коллаборациям.</p>
+      <div class="contact-links">
+        <a href="https://github.com/jeka0693" target="_blank" rel="noopener" class="contact-link">
+          <span class="icon">🐙</span> GitHub
+        </a>
+        <a href="mailto:your-email@example.com" class="contact-link">
+          <span class="icon">✉️</span> Email
+        </a>
+        <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="contact-link">
+          <span class="icon">✈️</span> Telegram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Евгений. Создано с ❤️ и чистым кодом.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
